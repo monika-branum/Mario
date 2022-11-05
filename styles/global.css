@@ -43,7 +43,9 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.castle {
+#castle-one,
+#castle-two,
+#castle-three {
     width: 250px;
 }
 
@@ -58,4 +60,11 @@ button {
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 10px;
+}
+
+.peach::after {
+    /* content: url(/shell-game-demo/assets/Princess\ Peach.jpg); */
+    font-size: 7rem;
+    content: 'X';
+    position: absolute;
 }
