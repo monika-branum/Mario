@@ -1,39 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Web App</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header>
+            <h1>Save Princess Peach!</h1>
+            <p>
+                Bowser has kidnapped Princess Peach! Which castle is she in? Help Mario find her by
+                guessing which castle she is being held in.
+            </p>
+        </header>
 
-</head>
-
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+        <main>
+            <section>
+                <div>
+                    <img
+                        src="./assets/Mario Yoshi.jpg"
+                        alt="mario riding on yoshi's back"
+                        class="marioyoshi hidden"
+                    />
+                    <p></p>
+                </div>
+            </section>
+            <section id="castle-section">
+                <div>
+                    <img
+                        src="./assets/Princess Peach Castle.png"
+                        alt="Princess castle"
+                        class="castle"
+                        id="castle-one"
+                    />
+                    <button id="button-one">This one!</button>
+                </div>
+                <div>
+                    <img
+                        src="./assets/Princess Peach Castle.png"
+                        alt="Princess castle"
+                        class="castle"
+                        id="castle-two"
+                    />
+                    <button id="'button-two">This one!</button>
+                </div>
+                <div>
+                    <img
+                        src="./assets/Princess Peach Castle.png"
+                        alt="Princess castle"
+                        class="castle"
+                        id="castle-three"
+                    />
+                    <button id="button-three">This one!</button>
+                </div>
+            </section>
+            <section>
+                <div id="stats">
+                    <p id="wins"></p>
+                    <p id="losses"></p>
+                    <p id="total"></p>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>

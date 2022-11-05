@@ -33,3 +33,29 @@ header .logo {
 main {
     padding: 20px;
 }
+
+.hidden {
+    display: none;
+}
+
+#castle-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.castle {
+    width: 250px;
+}
+
+div {
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+}
