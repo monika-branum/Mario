@@ -63,7 +63,7 @@ button {
 }
 
 .peach::after {
-    /* content: url(/shell-game-demo/assets/Princess\ Peach.jpg); */
+    content: url(/shell-game-demo/assets/Princess\ Peach.jpg);
     font-size: 7rem;
     content: 'X';
     position: absolute;

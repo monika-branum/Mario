@@ -18,12 +18,9 @@ section
 -   div
     -   img
     -   button
--   div
-    -   img
-    -   button
-
-section
--div
+-   div - img - button
+    section
+    -div
 
 -   p wins/losses/total
     -div
